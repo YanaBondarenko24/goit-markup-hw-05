@@ -464,7 +464,7 @@ img {
 .footer-social-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 }
 .social-list-item {
   width: 40px;
@@ -522,4 +522,31 @@ img {
   width: 264px;
 }
 
+/* #endregion */
+
+/* #region Modal Window*/
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+}
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 408px;
+  min-height: 584px;
+  border-radius: 4px;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  background-color: #fcfcfc;
+  transform: translateX(-50%) translateY(-50%);
+}
+.modal-btn-icon {
+  border-radius: 4px;
+}
 /* #endregion */
