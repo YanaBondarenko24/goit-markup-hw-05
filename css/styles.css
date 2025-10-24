@@ -832,7 +832,7 @@ img {
 input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
   fill: #f4f4fd;
   background-color: #404bbf;
-  border-color: none;
+  border: none;
 }
 .agreement-checkbox-icon {
   fill: inherit;
