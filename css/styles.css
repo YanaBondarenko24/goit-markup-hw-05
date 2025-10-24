@@ -815,11 +815,11 @@ img {
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  fill: transparent;
   width: 16px;
   height: 16px;
   margin-right: 8px;
 
-  fill: transparent;
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
@@ -835,7 +835,7 @@ input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
   border-color: none;
 }
 .agreement-checkbox-icon {
-  fill: currentColor;
+  fill: inherit;
 }
 .accent-text {
   line-height: 1.3;
