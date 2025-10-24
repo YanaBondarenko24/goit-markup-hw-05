@@ -565,9 +565,18 @@ img {
   outline: transparent;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   outline: transparent;
+   font-size: 12px;
+   line-height: 2;
+   letter-spacing: 0.04em;
+   padding-left: 16px; 
+   color: #ffffff;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.footer-form-input::placeholder{
+  color: #ffffff;
+}
+
 .footer-form-input:focus {
   border-color: #31d0aa;
 }
@@ -582,6 +591,7 @@ img {
   border-radius: 4px;
   min-width: 169px;
   height: 40px;
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   background-color: #4d5ae5;
@@ -695,7 +705,7 @@ img {
   margin-bottom: 16px;
 }
 .modal-form-field {
-  margin-bottom: 8px;
+  margin-bottom: 16px:
 }
 .modal-form-label {
   display: block;
@@ -716,6 +726,7 @@ img {
   border-radius: 4px;
   outline: transparent;
   padding: 11px 38px;
+  background-color: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -736,29 +747,25 @@ img {
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-btn-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.modal-form-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: row;
-  gap: 10px;
 
+
+.modal-form-btn {
+  display: block;
+  margin: 0 auto;
+font-family: "Roboto", sans-serif;
   padding: 16px 32px;
   border-radius: 4px;
   min-width: 169px;
   height: 56px;
   font-weight: 500;
   font-size: 16px;
-  background-color: #4d5ae5;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #fff;
   text-align: center;
+  cursor: pointer;
+  border: none;
+  background-color: #4D5AE5;
 
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -772,11 +779,13 @@ img {
   height: 120px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.16667;
+  line-height: 1.17;
   letter-spacing: 0.04em;
   padding: 8px 16px;
   resize: none;
   outline: transparent;
+  color: rgba(46, 47, 66, 0.4);
+  background-color: transparent;
 
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -807,19 +816,18 @@ img {
   width: 16px;
   height: 16px;
 
-  color: transparent;
+  fill: transparent; 
   border-radius: 2px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   cursor: pointer;
 
-  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input[type="checkbox"]:checked + .agreement-wrapper > .agreement-checkbox {
-  color: #f4f4fd;
-  background-color: #4d5ae5;
-  border-color: #4d5ae5;
+  fill: #F4F4FD
+  background-color: #404bbf;
+  border-color: none;
 }
 .agreement-checkbox-icon {
   fill: currentColor;
